@@ -1,0 +1,67 @@
+.divButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.divMain{
+    display: flex;
+    flex-direction: row;
+}
+
+.sectionUno{
+    margin-top: 100px !important;
+    margin-bottom: 0px !important;
+}
+
+.divColorPrimario{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #0d6cc6;
+    margin-right: 20px;
+}
+
+.divColorSecundario{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f0dc6f;
+    margin-right: 20px;
+}
+
+
+.divColorTerciario{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #56d7e8;
+    margin-right: 20px;
+}
+
+
+.divColorPrimarioMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 50px;
+}
+
+.itemInput{
+    margin: 30px !important;
+}
+
+.sectionDos{
+    margin-top: 0px !important;
+}
+
+.footer{
+    background-color:  #0d6cc6;
+    color: white;
+}
