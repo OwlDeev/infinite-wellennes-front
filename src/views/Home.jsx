@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import Table from "../components/Table";
 import Rating from "../components/Rating";
 import RadioButtons from "../components/RadioButtons";
-import TextField from "../components/TextField"
+import TextField from "../components/InputTextField"
 import Checks from "../components/Checks"
 
 function Home() {
