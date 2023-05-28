@@ -2,7 +2,7 @@ body {
     overflow-x: hidden;
   }
 
-.box-main{
+.box-main-login{
     width: 99vw !important;
     height: 90vh !important;
     display: flex;

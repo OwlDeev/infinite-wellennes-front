@@ -2,7 +2,8 @@ import AppBar from "./components/AppBar";
 import { Typography } from "@mui/material";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./views/Home";
-import Login from "./views/Login"
+import Login from "./views/Login";
+import Footer from "./components/Footer";
 import { Provider } from "./Context";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
@@ -25,17 +26,14 @@ export default function App() {
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />
               <Route path="/login" element={<Login />} />
-              <Route path="https://owldeev.github.io/iw-componentes/" element={<Home />} />
+              <Route
+                path="https://owldeev.github.io/iw-componentes/"
+                element={<Home />}
+              />
             </Routes>
+            <Footer></Footer>
           </BrowserRouter>
         </Provider>
-
-        <footer className="footer">
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} p={1}>
-            <center>2023 Infinite Wellness© by Eagles Academy.</center>
-          </Typography>
-          {/* dejar iconos de linkedin, youtube y wsp */}
-        </footer>
       </div>
     </ThemeProvider>
   );

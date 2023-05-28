@@ -14,9 +14,11 @@ import "../css/Login.css";
 import LoginIcon from "@mui/icons-material/Login";
 import fondoLogin from "../imgs/fondoLogin.jpg";
 import LoginController from "../controllers/LoginController";
+import InputDate from "../components/InputDate";
+import ButtonBasic from "../components/ButtonBasic";
 
 function Login() {
-  const { register, handleSubmit, errors, onSubmit, onError } =
+  const { register, handleSubmit, errors, onSubmit, onError, control } =
     LoginController();
 
   return (
@@ -24,7 +26,7 @@ function Login() {
       <Grid container>
         <Grid xs={12}>
           <Box
-            className="box-main"
+            className="box-main-login"
             sx={{
               background: `url(${fondoLogin}) no-repeat center center fixed`,
               backgroundSize: "cover",
@@ -43,25 +45,22 @@ function Login() {
                   error={errors.rut ? true : false}
                   helperText={errors.rut?.message}
                 />
-                <InputTextField
-                  nombreCampo="password"
-                  id="outlined-password-input"
-                  labelTitulo="Contraseña"
-                  tipoCampo="password"
-                  autoComplete="current-password"
+
+                <InputDate
+                  nombreCampo="fechaNacimiento"
                   className="item-login"
-                  register={register}
-                  error={errors.password ? true : false}
-                  helperText={errors.password?.message}
+                  control={control}
+                  error={errors.fechaNacimiento ? true : false}
+                  helperText={errors.fechaNacimiento?.message}
                 />
-                <Button
+
+                <ButtonBasic
                   variant="contained"
-                  startIcon={<LoginIcon />}
+                  tipoBoton="login"
+                  titulo="Iniciar Sesión"
                   className="item-login"
                   type="submit"
-                >
-                  Iniciar Sesión
-                </Button>
+                ></ButtonBasic>
               </form>
             </Box>
           </Box>
